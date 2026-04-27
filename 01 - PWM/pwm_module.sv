@@ -1,6 +1,6 @@
 module pwm #(
     parameter DUTY_BITS = 8, // Quantos bits de entrada vão determinar o valor do duty cycle
-    parameter CLOCK_DIV = 8 // Divisor de clock
+    parameter CLOCK_DIV = 8 // Sinal PWM terá frequência f = 50Mhz / 2^CLOCK_DIV
 )(
     input logic clk,
     input logic rst,

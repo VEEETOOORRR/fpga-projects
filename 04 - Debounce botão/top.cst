@@ -1,14 +1,5 @@
-IO_LOC  "push_button" 38;
-IO_PORT "push_button" IO_TYPE=LVCMOS33 PULL_MODE=UP;
-
 IO_LOC  "clk" 52;
 IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
-
-IO_LOC  "led[0]" 10;
-IO_PORT "led[0]" DRIVE=8 IO_TYPE=LVCMOS18;
-
-IO_LOC  "led[1]" 11;
-IO_PORT "led[1]" DRIVE=8 IO_TYPE=LVCMOS18;
 
 IO_LOC  "rst" 3;
 IO_PORT "rst" IO_TYPE=LVCMOS18;

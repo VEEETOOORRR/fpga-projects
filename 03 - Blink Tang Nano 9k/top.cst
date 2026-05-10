@@ -1,0 +1,33 @@
+IO_LOC  "en" 51;
+IO_PORT "en" PULL_MODE=UP;
+
+IO_LOC  "dir" 53;
+IO_PORT "dir" PULL_MODE=UP;
+
+IO_LOC  "tone[3]" 54;
+IO_PORT "tone[3]" PULL_MODE=UP;
+
+IO_LOC  "tone[2]" 55;
+IO_PORT "tone[2]" PULL_MODE=UP;
+
+IO_LOC  "tone[1]" 56;
+IO_PORT "tone[1]" PULL_MODE=UP;
+
+IO_LOC  "tone[0]" 57;
+IO_PORT "tone[0]" PULL_MODE=UP;
+
+IO_LOC  "clk" 52;
+
+IO_LOC  "rst" 4;
+IO_PORT "rst" PULL_MODE=UP;
+
+IO_LOC  "motor_control[0]" 37;
+
+IO_LOC  "motor_control[1]" 11;
+IO_PORT "motor_control[1]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "motor_control[2]" 13;
+IO_PORT "motor_control[2]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "motor_control[3]" 14;
+IO_PORT "motor_control[3]" DRIVE=8 IO_TYPE=LVCMOS18;

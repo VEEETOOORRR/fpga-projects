@@ -1,12 +1,12 @@
-module divfreq_tone {
+module divfreq_tone (
     input logic clk,
     input logic rst,
     input logic [2:0] tone,
     output logic clk_slow
-};
+);
 
     int counter_module;
-    logic [16:0] cont;
+    logic [31:0] cont;
 
     // N = fclk / (2 * fout)
 
@@ -29,7 +29,7 @@ module divfreq_tone {
             cont <= 0;
             clk_slow <= 0;
         end else begin
-            if(cont >= counter_module - 1) begin cont <= cont + 1; end
+            if(cont >= counter_module - 1) cont <= cont + 1;
             else begin
                 cont <= 0;
                 clk_slow <= ~clk_slow;
